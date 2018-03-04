@@ -1,1 +1,36 @@
-p{color: red;font-size: 20px;}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: red;
+    font-size: 20px;
+}
+
+#ro {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    position: fixed;
+    top: 200px;
+    left: 100px;
+}
+#ro:hover{
+    animation: roll 1s linear infinite;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+        border-radius: 10px;
+    }
+    50% {
+        transform: rotate(180deg);
+        border-radius: 50%;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-radius: 10px;
+    }
+}
